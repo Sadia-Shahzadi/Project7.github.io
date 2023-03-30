@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    width: 100%;
+    height: 13vh;
+    background-color: #c8d6e5;
+}
+nav{
+    display: flex;
+    padding: 2% 5%;
+}
+.logo img{
+    width: 70%;
+}
+nav ul{
+    text-align: right;
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 12px;
+}
+nav ul li a{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    display: block;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    background-color: #95a5a6;
+}
+nav ul li a:hover{
+    color: rgb(29, 29, 29, 0.1);
+}
+
+/* Gallery Design  */
+.gallery{
+    margin: 5% 5%;
+    display: flex;
+}
+.l-b img{
+    position: relative;
+    width: 100%;
+    height: 93vh;
+    border-radius: 50%;
+    transition: 1s ease;
+}
+.l-b img:hover{
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.l-b h1{
+    position: absolute;
+    top: 0;
+    padding-top: 28%;
+    padding-left: 70px;
+    font-size: 45px;
+    color: white;
+    font-weight: bolder;
+}
+.l-b p{
+    position: absolute;
+    top: 0;
+    padding-top: 33%;
+    padding-left: 70px;
+    font-size: 15px;
+    color: white;
+    font-weight: 200;
+    font-style: italic;
+}
+.btn{
+    position: absolute;
+    top: 0;
+    left: 65px;
+    margin-top: 36%;
+    margin-left: 70px;
+    font-size: 15px;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 25px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.right-images img{
+    margin: 10px 20px;
+}
+.col{
+    position: relative;
+}
+.col img{
+    border-radius: 10px;
+    border: 2px solid  #95a5a6;
+    width: 90%;
+}
+.col img:hover{
+    border-radius: 50%;
+    transition: .5s ease;
+}
+.col h1{
+    position: absolute;
+    top: 0;
+    margin-top: 30%;
+    margin-left: 30%;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.col h3{
+    position: absolute;
+    top: 0;
+    margin-top: 45%;
+    margin-left: 15%;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Mens Catagory  */
+.catagory{
+    margin: 5% 5%;
+}
+.catagory h1{
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.catagory p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+}
+.design{
+    display: flex;
+    margin: 4% 0;
+}
+.design img{
+    margin: 0 10px;
+    border: 2px solid #95a5a6;
+    border-radius: 10px;
+}
+.design img:hover{
+    transform: scale(1.1);
+}
+.design h1{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 12px;
+    text-decoration: none;
+}
+.design h3{
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 4px;
+    padding-left: 12px;
+    color: #bdc3c7;
+}
+
+/* Footer Design  */
+.copyright{
+    text-align: center;
+    margin-top: 100px;
+    height: 80px;
+    background-color: #c8d6e5;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.head{
+    font-size: 14px;
+    padding-left: 20px;
+}
